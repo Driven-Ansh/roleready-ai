@@ -77,7 +77,7 @@ export default function Home() {
               <span>Candidate: <strong className="text-slate-200">Arjun Mehta</strong></span>
             </div>
             <a
-              href="https://github.com/Driven-Ansh/driven-ansh"
+              href="https://github.com/Driven-Ansh/roleready-ai"
               target="_blank"
               rel="noreferrer"
               className="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-700 transition flex items-center gap-1.5"
