@@ -1,0 +1,20 @@
+{
+  "name": "Arjun Mehta",
+  "targetRole": "Backend Software Engineer",
+  "education": "B.Tech Computer Science",
+  "skills": ["Java", "Python", "SQL", "Git", "REST APIs", "React", "HTML", "CSS"],
+  "projects": [
+    {
+      "title": "CampusConnect",
+      "description": "Student management platform",
+      "technologies": ["React", "Node.js", "PostgreSQL"]
+    },
+    {
+      "title": "Smart Expense Tracker",
+      "description": "Personal finance application",
+      "technologies": ["Python", "Flask", "PostgreSQL"]
+    }
+  ],
+  "certifications": ["AWS Cloud Practitioner"],
+  "github": "https://github.com/demo/arjun-mehta"
+}

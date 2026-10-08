@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: roleready-ai
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    # Render will automatically detect the GitHub repo when you create the service.
+    # If you need a specific branch, uncomment the line below:
+    # branch: main
