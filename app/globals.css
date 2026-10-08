@@ -2,7 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom utility classes */
-html {
-  scroll-behavior: smooth;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  * {
+    @apply border-slate-800;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-2xl shadow-xl;
+  }
+  .glass-card-hover {
+    @apply glass-card hover:border-slate-700/80 hover:shadow-2xl transition-all duration-300;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border;
+  }
+  .badge-blue {
+    @apply badge bg-blue-500/10 text-blue-400 border-blue-500/20;
+  }
+  .badge-green {
+    @apply badge bg-emerald-500/10 text-emerald-400 border-emerald-500/20;
+  }
+  .badge-amber {
+    @apply badge bg-amber-500/10 text-amber-400 border-amber-500/20;
+  }
+  .badge-red {
+    @apply badge bg-red-500/10 text-red-400 border-red-500/20;
+  }
+  .badge-purple {
+    @apply badge bg-purple-500/10 text-purple-400 border-purple-500/20;
+  }
+  .stat-card {
+    @apply bg-slate-950/80 border border-slate-800/80 rounded-xl p-5 text-center space-y-1;
+  }
+  .section-title {
+    @apply text-lg font-bold text-white flex items-center gap-2;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Progress ring animation */
+.progress-ring-circle {
+  transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }

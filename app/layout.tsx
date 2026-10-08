@@ -2,8 +2,9 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'RoleReady AI',
-  description: 'Job-specific readiness platform',
+  title: 'RoleReady AI — Job-Specific Readiness Platform',
+  description:
+    'AI-powered career intelligence that analyzes your skills against any job posting. Get gap analysis, personalized roadmaps, interview prep, and ATS optimization.',
 };
 
 export default function RootLayout({
@@ -12,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full bg-background text-textPrimary">
-      <body className="flex flex-col min-h-screen">
+    <html lang="en" className="h-full">
+      <body className="flex flex-col min-h-screen antialiased">
         {children}
       </body>
     </html>
